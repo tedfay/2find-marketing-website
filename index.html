@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Find Marketing - Exceptional Digital Experiences</title>
+    <meta name="description" content="Building measureable, meaningful digital experiences that work for everyone. Marketing strategies that deliver results through accessible, user-focused design.">
+
+```
+<!-- Accessibility and Performance -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+    /* Neurodiversity-informed Design System */
+    :root {
+        --primary-color: #2563eb;
+        --secondary-color: #0f172a;
+        --accent-color: #06b6d4;
+        --text-primary: #1e293b;
+        --text-secondary: #64748b;
+        --background: #ffffff;
+        --surface: #f8fafc;
+        --border: #e2e8f0;
+        --focus-ring: 0 0 0 4px rgba(37, 99, 235, 0.2);
+        --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+        --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+        --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+        --success-color: #059669;
+        --warning-color: #d97706;
+        --error-color: #dc2626;
+        
+        /* Neurodiversity-specific variables */
+        --content-max-width: 65ch; /* Optimal reading line length */
+        --spacing-unit: 1.5rem; /* Consistent spacing rhythm */
+        --border-radius-small: 4px;
+        --border-radius-medium: 8px;
+        --border-radius-large: 12px;
+    }
+
+    /* Reset and base styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Reduce motion for users who prefer it */
+    @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+            scroll-behavior: auto !important;
+        }
+    }
+
+    body {
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        font-size: 1.125rem; /* Larger base font size for readability */
+        line-height: 1.6; /* Generous line height for dyslexia support */
+        color: var(--text-primary);
+        background: var(--background);
+        scroll-behavior: smooth;
+        letter-spacing: 0.02em; /* Slight letter spacing for readability */
+    }
+
+    /* Focus management - enhanced for keyboard navigation */
+    :focus {
+        outline: none;
+        box-shadow: var(--focus-ring);
+        border-radius: var(--border-radius-small);
+    }
+
+    :focus:not(:focus-visible) {
+        box-shadow: none;
+    }
+
+    /* Skip to content for screen readers */
+    .skip-link {
+        position: absolute;
+        top: -40px;
+        left: var(--spacing-unit);
+        background: var(--primary-color);
+        color: white;
+        padding: 0.75rem 1rem;
+        text-decoration: none;
+        border-radius: var(--border-radius-medium);
+        z-index: 1000;
+        font-weight: 600;
+        transition: top 0.3s ease;
+    }
+
+    .skip-link:focus {
+        top: var(--spacing-unit);
+    }
+
+    /* Header with improved contrast and spacing */
+    header {
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(10px);
+        border-bottom: 2px solid var(--border); /* Stronger border for visual clarity */
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    nav {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: var(--spacing-unit);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: var(--spacing-unit);
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--primary-color);
+        text-decoration: none;
+        padding: 0.5rem;
+        border-radius: var(--border-radius-medium);
+    }
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+        gap: calc(var(--spacing-unit) * 1.5); /* Increased spacing for easier targeting */
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: var(--text-primary);
+        font-weight: 500;
+        padding: 0.75rem 1rem; /* Larger touch targets */
+        border-radius: var(--border-radius-medium);
+        transition: all 0.2s ease;
+        min-width: 44px; /* WCAG minimum touch target */
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-links a:hover,
+    .nav-links a:focus {
+        color: var(--primary-color);
+        background: rgba(37, 99, 235, 0.1);
+    }
+
+    /* Hero Section with improved readability */
+    .hero {
+        padding: calc(var(--spacing-unit) * 3) var(--spacing-unit);
+        text-align: center;
+        background: linear-gradient(135deg, var(--surface) 0%, white 100%);
+    }
+
+    .hero-container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .hero h1 {
+        font-size: clamp(2rem, 4vw, 3rem); /* More conservative scaling */
+        font-weight: 600;
+        margin-bottom: calc(var(--spacing-unit) * 1.5);
+        line-height: 1.2;
+        max-width: var(--content-max-width);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero .subtitle {
+        font-size: 1.25rem;
+        color: var(--text-secondary);
+        margin-bottom: calc(var(--spacing-unit) * 2);
+        max-width: var(--content-max-width);
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.5;
+    }
+
+    /* Buttons with enhanced accessibility */
+    .cta-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        background: var(--primary-color);
+        color: white;
+        padding: 1rem 2rem;
+        border: 2px solid var(--primary-color);
+        border-radius: var(--border-radius-medium);
+        font-size: 1.125rem;
+        font-weight: 600;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        box-shadow: var(--shadow-sm);
+        min-width: 44px;
+        min-height: 44px;
+        position: relative;
+    }
+
+    .cta-button:hover:not(:disabled) {
+        background: #1d4ed8;
+        transform: translateY(-1px);
+        box-shadow: var(--shadow-md);
+    }
+
+    .cta-button:focus {
+        box-shadow: var(--focus-ring), var(--shadow-md);
+    }
+
+    .cta-button:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+
+    /* Features Grid with improved spacing and readability */
+    .features {
+        padding: calc(var(--spacing-unit) * 3) var(--spacing-unit);
+        background: white;
+    }
+
+    .features-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .section-title {
+        text-align: center;
+        font-size: 2.25rem;
+        margin-bottom: var(--spacing-unit);
+        font-weight: 600;
+        max-width: var(--content-max-width);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section-subtitle {
+        text-align: center;
+        font-size: 1.125rem;
+        color: var(--text-secondary);
+        margin-bottom: calc(var(--spacing-unit) * 2);
+        max-width: var(--content-max-width);
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.6;
+    }
+
+    .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: calc(var(--spacing-unit) * 1.5);
+        margin-top: calc(var(--spacing-unit) * 2);
+    }
+
+    .feature-card {
+        background: var(--surface);
+        padding: calc(var(--spacing-unit) * 1.5);
+        border-radius: var(--border-radius-large);
+        border: 2px solid var(--border);
+        transition: all 0.3s ease;
+        position: relative;
+    }
+
+    .feature-card:hover {
+        transform: translateY(-2px); /* Reduced movement for motion sensitivity */
+        box-shadow: var(--shadow-lg);
+        border-color: var(--primary-color);
+    }
+
+    .feature-icon {
+        width: 56px;
+        height: 56px;
+        background: var(--primary-color);
+        border-radius: var(--border-radius-medium);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: var(--spacing-unit);
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    .feature-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 0.75rem;
+        color: var(--text-primary);
+    }
+
+    .feature-description {
+        color: var(--text-secondary);
+        line-height: 1.6;
+        max-width: var(--content-max-width);
+    }
+
+    /* Stats Section with better contrast */
+    .stats {
+        background: var(--secondary-color);
+        color: white;
+        padding: calc(var(--spacing-unit) * 3) var(--spacing-unit);
+    }
+
+    .stats-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: calc(var(--spacing-unit) * 1.5);
+        margin-top: calc(var(--spacing-unit) * 2);
+    }
+
+    .stat {
+        padding: var(--spacing-unit);
+        border-radius: var(--border-radius-medium);
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .stat-number {
+        font-size: 2.5rem; /* Slightly smaller for readability */
+        font-weight: 600;
+        color: var(--accent-color);
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    .stat-label {
+        font-size: 1.125rem;
+        opacity: 0.9;
+    }
+
+    /* Contact Section with improved form accessibility */
+    .contact {
+        padding: calc(var(--spacing-unit) * 3) var(--spacing-unit);
+        background: var(--surface);
+    }
+
+    .contact-container {
+        max-width: 700px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .contact-form {
+        display: grid;
+        gap: calc(var(--spacing-unit) * 1.5);
+        margin-top: calc(var(--spacing-unit) * 2);
+        text-align: left;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .form-label {
+        font-weight: 600;
+        color: var(--text-primary);
+        font-size: 1rem;
+    }
+
+    .form-input,
+    .form-textarea {
+        width: 100%;
+        padding: 1rem;
+        border: 2px solid var(--border);
+        border-radius: var(--border-radius-medium);
+        font-size: 1rem;
+        font-family: inherit;
+        transition: border-color 0.2s ease;
+        background: white;
+        line-height: 1.5;
+    }
+
+    .form-input:focus,
+    .form-textarea:focus {
+        border-color: var(--primary-color);
+        box-shadow: var(--focus-ring);
+    }
+
+    .form-textarea {
+        resize: vertical;
+        min-height: 120px;
+        font-family: inherit;
+    }
+
+    /* Error and success states */
+    .form-group.error .form-input,
+    .form-group.error .form-textarea {
+        border-color: var(--error-color);
+    }
+
+    .form-group.success .form-input,
+    .form-group.success .form-textarea {
+        border-color: var(--success-color);
+    }
+
+    .form-message {
+        font-size: 0.875rem;
+        margin-top: 0.25rem;
+    }
+
+    .form-message.error {
+        color: var(--error-color);
+    }
+
+    .form-message.success {
+        color: var(--success-color);
+    }
+
+    /* Footer with improved contrast */
+    footer {
+        background: var(--secondary-color);
+        color: white;
+        padding: calc(var(--spacing-unit) * 2) var(--spacing-unit);
+        text-align: center;
+    }
+
+    .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: calc(var(--spacing-unit) * 1.5);
+        margin-bottom: calc(var(--spacing-unit) * 1.5);
+        text-align: left;
+    }
+
+    .footer-section h3 {
+        margin-bottom: var(--spacing-unit);
+        color: var(--accent-color);
+        font-size: 1.25rem;
+    }
+
+    .footer-section p,
+    .footer-section a {
+        color: rgba(255, 255, 255, 0.9);
+        text-decoration: none;
+        line-height: 1.6;
+    }
+
+    .footer-section a {
+        border-bottom: 1px solid transparent;
+        transition: border-color 0.2s ease;
+    }
+
+    .footer-section a:hover,
+    .footer-section a:focus {
+        color: var(--accent-color);
+        border-bottom-color: var(--accent-color);
+    }
+
+    .footer-bottom {
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        padding-top: calc(var(--spacing-unit) * 1.5);
+        opacity: 0.8;
+    }
+
+    /* High contrast mode support */
+    @media (prefers-contrast: high) {
+        :root {
+            --border: #000000;
+            --text-secondary: #000000;
+            --focus-ring: 0 0 0 4px #000000;
+        }
+    }
+
+    /* Dark mode support */
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --background: #0f172a;
+            --surface: #1e293b;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --border: #334155;
+        }
+    }
+
+    /* Responsive Design - Mobile First */
+    @media (max-width: 768px) {
+        :root {
+            --spacing-unit: 1rem;
+        }
+        
+        nav {
+            flex-direction: column;
+            gap: 1rem;
+            align-items: stretch;
+        }
+        
+        .nav-links {
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .hero,
+        .features,
+        .stats,
+        .contact {
+            padding: calc(var(--spacing-unit) * 2) var(--spacing-unit);
+        }
+        
+        .section-title {
+            font-size: 1.875rem;
+        }
+        
+        .features-grid {
+            grid-template-columns: 1fr;
+        }
+        
+        .stats-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 480px) {
+        .stats-grid {
+            grid-template-columns: 1fr;
+        }
+        
+        .footer-content {
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+    }
+
+    /* Print styles */
+    @media print {
+        header {
+            position: static;
+        }
+        
+        .skip-link,
+        .cta-button {
+            display: none;
+        }
+        
+        * {
+            color: black !important;
+            background: white !important;
+        }
+    }
+
+    /* Animation preferences */
+    @media (prefers-reduced-motion: no-preference) {
+        .feature-card:hover {
+            animation: gentle-float 0.3s ease-out;
+        }
+    }
+
+    @keyframes gentle-float {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-2px); }
+        100% { transform: translateY(-2px); }
+    }
+
+    /* Screen reader only content */
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+    }
+
+    /* Custom properties for user preferences */
+    .user-preferences-enabled {
+        --animation-speed: 0s;
+        --font-size-multiplier: 1.2;
+    }
+</style>
+```
+
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+```
+<header>
+    <nav role="navigation" aria-label="Main navigation">
+        <a href="#" class="logo" aria-label="2 Find Marketing home">2 Find Marketing</a>
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#approach">Our Approach</a></li>
+            <li><a href="#results">Results</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main id="main-content">
+    <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero-container">
+            <h1 id="hero-heading">Exceptional Digital Experiences That Actually Work</h1>
+            <p class="subtitle">We build measurable, meaningful marketing strategies through accessible, user-focused design that delivers real results for your business.</p>
+            <a href="#contact" class="cta-button" aria-describedby="cta-description">
+                <span>Start Your Project</span>
+                <span aria-hidden="true">→</span>
+            </a>
+            <div id="cta-description" class="sr-only">Contact us to discuss your marketing project and goals</div>
+        </div>
+    </section>
+
+    <section id="services" class="features" aria-labelledby="services-heading">
+        <div class="features-container">
+            <h2 id="services-heading" class="section-title">Services That Drive Results</h2>
+            <p class="section-subtitle">Like OxO redefined kitchen tools through simple, functional design, we redefine digital marketing through experiences that just work for everyone.</p>
+            
+            <div class="features-grid">
+                <article class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">🎯</div>
+                    <h3 class="feature-title">Strategic Marketing</h3>
+                    <p class="feature-description">Data-driven strategies that align with your business goals. Every campaign is measured, meaningful, and designed for real return on investment.</p>
+                </article>
+                
+                <article class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">♿</div>
+                    <h3 class="feature-title">Universal Accessibility</h3>
+                    <p class="feature-description">Designs that work for everyone, automatically. We build inclusive experiences that expand your reach and demonstrate excellence in user experience.</p>
+                </article>
+                
+                <article class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">📊</div>
+                    <h3 class="feature-title">Measurable Outcomes</h3>
+                    <p class="feature-description">Clear metrics, transparent reporting, and continuous optimization. You will always know exactly how your investment is performing.</p>
+                </article>
+                
+                <article class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">🚀</div>
+                    <h3 class="feature-title">Digital Innovation</h3>
+                    <p class="feature-description">Cutting-edge solutions that feel effortless to use. We leverage the latest technology to create experiences that delight users and drive results.</p>
+                </article>
+                
+                <article class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">🤝</div>
+                    <h3 class="feature-title">Partnership Approach</h3>
+                    <p class="feature-description">We work as an extension of your team, bringing expertise in networking, outreach, and social media to amplify your message effectively.</p>
+                </article>
+                
+                <article class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">✨</div>
+                    <h3 class="feature-title">Exceptional User Experience</h3>
+                    <p class="feature-description">Every interaction is crafted with intention. Clear communication, intuitive layouts, and experiences that users remember and return to.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="results" class="stats" aria-labelledby="results-heading">
+        <div class="stats-container">
+            <h2 id="results-heading" class="section-title" style="color: white;">Results That Speak</h2>
+            <p class="section-subtitle" style="color: rgba(255,255,255,0.9);">Our commitment to accessible, user-focused design delivers measurable business impact for our clients.</p>
+            
+            <div class="stats-grid" role="list">
+                <div class="stat" role="listitem">
+                    <span class="stat-number" aria-label="98 percent">98%</span>
+                    <span class="stat-label">Accessibility Score Average</span>
+                </div>
+                <div class="stat" role="listitem">
+                    <span class="stat-number" aria-label="3.2 times">3.2×</span>
+                    <span class="stat-label">Average ROI Increase</span>
+                </div>
+                <div class="stat" role="listitem">
+                    <span class="stat-number" aria-label="47 percent">47%</span>
+                    <span class="stat-label">Broader Audience Reach</span>
+                </div>
+                <div class="stat" role="listitem">
+                    <span class="stat-number" aria-label="100 percent">100%</span>
+                    <span class="stat-label">Client Satisfaction Rate</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact" aria-labelledby="contact-heading">
+        <div class="contact-container">
+            <h2 id="contact-heading" class="section-title">Ready to Build Something Exceptional?</h2>
+            <p class="section-subtitle">Let's create a digital experience that works beautifully for everyone and delivers real results for your business.</p>
+            
+            <form class="contact-form" action="#" method="POST" aria-label="Contact form" novalidate>
+                <div class="form-group">
+                    <label for="name" class="form-label">Your Name (Required)</label>
+                    <input type="text" id="name" name="name" class="form-input" required aria-describedby="name-help">
+                    <div id="name-help" class="form-message">Please enter your full name</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email" class="form-label">Email Address (Required)</label>
+                    <input type="email" id="email" name="email" class="form-input" required aria-describedby="email-help">
+                    <div id="email-help" class="form-message">We'll use this to respond to your inquiry</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="company" class="form-label">Company Name</label>
+                    <input type="text" id="company" name="company" class="form-input" aria-describedby="company-help">
+                    <div id="company-help" class="form-message">Optional: Help us understand your business context</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message" class="form-label">Tell us about your project (Required)</label>
+                    <textarea id="message" name="message" class="form-textarea" required aria-describedby="message-help" placeholder="What are your goals? What challenges are you facing? How can we help you succeed?"></textarea>
+                    <div id="message-help" class="form-message">Please describe your project goals and any specific requirements</div>
+                </div>
+                
+                <button type="submit" class="cta-button" aria-describedby="submit-help">
+                    <span>Send Message</span>
+                    <span aria-hidden="true">✓</span>
+                </button>
+                <div id="submit-help" class="form-message">We typically respond within 24 hours</div>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer role="contentinfo">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>2 Find Marketing</h3>
+            <p>Building exceptional digital experiences that work for everyone and deliver measurable results. Based in excellence, driven by accessibility.</p>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Our Approach</h3>
+            <p>Accessible design, strategic thinking, and measurable outcomes. Every project is crafted with intention and optimized for real-world success across all user types.</p>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Connect With Us</h3>
+            <p>Ready to discuss your project? <a href="#contact">Get in touch</a> and let's build something exceptional together. We're here to help you succeed.</p>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2024 2 Find Marketing, LLC. All rights reserved. Designed with accessibility, neurodiversity, and excellence in mind.</p>
+    </div>
+</footer>
+
+<script>
+    // Enhanced accessibility and user experience features
+    
+    // Smooth scrolling with proper focus management
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                // Smooth scroll with reduced motion preference support
+                const scrollBehavior = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+                target.scrollIntoView({
+                    behavior: scrollBehavior,
+                    block: 'start'
+                });
+                
+                // Focus management for accessibility
+                setTimeout(() => {
+                    target.focus();
+                    target.setAttribute('tabindex', '-1');
+                }, scrollBehavior === 'smooth' ? 300 : 0);
+            }
+        });
+    });
+
+    // Form validation and submission with accessibility enhancements
+    document.querySelector('.contact-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Clear previous validation states
+        const formGroups = this.querySelectorAll('.form-group');
+        formGroups.forEach(group => {
+            group.classList.remove('error', 'success');
+            const message = group.querySelector('.form-message');
+            if (message) {
+                message.classList.remove('error', 'success');
+            }
+        });
+        
+        // Validate form
+        let isValid = true;
+        const requiredFields = this.querySelectorAll('[required]');
+        
+        requiredFields.forEach(field => {
+            const formGroup = field.closest('.form-group');
+            const message = formGroup.querySelector('.form-message');
+            
+            if (!field.value.trim()) {
+                isValid = false;
+                formGroup.classList.add('error');
+                if (message) {
+```
