@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,144 +6,26 @@
     <title>2 Find Marketing - Exceptional Digital Experiences</title>
     <meta name="description" content="Building measureable, meaningful digital experiences that work for everyone. Marketing strategies that deliver results through accessible, user-focused design.">
 
-```
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
 
-<style>
-    /* Complete reset to eliminate all browser defaults */
-    * {
+    <style>
+    /* Reset & box-sizing */
+    *, *::before, *::after {
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
-    }
-
-    *::before,
-    *::after {
         box-sizing: border-box;
     }
 
     html {
         line-height: 1.15;
         -webkit-text-size-adjust: 100%;
-        border: none !important;
-        outline: none !important;
-        box-shadow: none !important;
-        background: var(--white) !important;
+        background: var(--white);
     }
-
     body {
         margin: 0;
-    }
-
-    /* Remove all default outlines and borders */
-    *:focus {
-        outline: none;
-    }
-
-    /* Aggressive blue bar elimination */
-    html,
-    body,
-    header,
-    nav,
-    main,
-    section,
-    div,
-    ul,
-    li,
-    a {
-        border-top-color: transparent !important;
-        border-top-style: none !important;
-        border-top-width: 0 !important;
-        -webkit-appearance: none !important;
-        -moz-appearance: none !important;
-        appearance: none !important;
-    }
-
-    /* Target specific blue bar sources */
-    ::-webkit-scrollbar {
-        display: none;
-    }
-
-    * {
-        scrollbar-width: none;
-        -ms-overflow-style: none;
-    }
-
-    /* Remove any focus rings that might appear blue */
-    *:focus,
-    *:active,
-    *:hover {
-        -webkit-tap-highlight-color: transparent !important;
-        -webkit-focus-ring-color: transparent !important;
-        outline-color: var(--primary) !important;
-    }
-
-    /* Only allow our specific borders where intended */
-    header {
-        border-bottom: 2px solid var(--gray-200) !important;
-    }
-
-    .form-input,
-    .form-textarea {
-        border: 2px solid var(--gray-300) !important;
-    }
-
-    .feature-card {
-        border: 1px solid var(--gray-200) !important;
-    }
-
-    .stat {
-        border: 1px solid rgba(255, 255, 255, 0.2) !important;
-    }
-
-    .footer-bottom {
-        border-top: 1px solid rgba(255, 255, 255, 0.3) !important;
-    }
-
-    /* Remove default link styling */
-    a {
-        color: inherit;
-        text-decoration: none;
-    }
-
-    /* Remove default list styling */
-    ul,
-    ol {
-        list-style: none;
-    }
-
-    /* High contrast color system */
-    :root {
-        --primary: #1d4ed8;
-        --primary-dark: #1e40af;
-        --secondary: #0f172a;
-        --accent: #0891b2;
-        
-        /* Maximum contrast text colors */
-        --text-black: #000000;
-        --text-dark: #111827;
-        --text-medium: #374151;
-        
-        --white: #ffffff;
-        --gray-50: #f9fafb;
-        --gray-100: #f3f4f6;
-        --gray-200: #e5e7eb;
-        --gray-300: #d1d5db;
-        
-        --success: #059669;
-        --error: #dc2626;
-        
-        --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-        --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
-        --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
-        
-        --radius: 8px;
-        --radius-lg: 12px;
-    }
-
-    body {
         font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
         font-size: 18px;
         font-weight: 600;
@@ -152,9 +33,38 @@
         color: var(--text-black);
         background: var(--white);
         -webkit-font-smoothing: antialiased;
-        border: none !important;
-        outline: none !important;
-        box-shadow: none !important;
+    }
+
+    /* Color system */
+    :root {
+        --primary: #1d4ed8;
+        --primary-dark: #1e40af;
+        --secondary: #0f172a;
+        --accent: #0891b2;
+        --text-black: #000000;
+        --text-dark: #111827;
+        --text-medium: #374151;
+        --white: #ffffff;
+        --gray-50: #f9fafb;
+        --gray-100: #f3f4f6;
+        --gray-200: #e5e7eb;
+        --gray-300: #d1d5db;
+        --success: #059669;
+        --error: #dc2626;
+        --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+        --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+        --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+        --radius: 8px;
+        --radius-lg: 12px;
+    }
+
+    /* Links, lists, default styles */
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+    ul, ol {
+        list-style: none;
     }
 
     /* Skip link */
@@ -169,10 +79,28 @@
         border-radius: var(--radius);
         font-weight: 700;
         z-index: 1000;
+        outline: none;
+        box-shadow: none;
+        transition: top 0.2s;
     }
-
     .skip-link:focus {
         top: 16px;
+        outline: 3px solid var(--primary);
+        box-shadow: 0 0 0 4px var(--accent);
+    }
+
+    /* Focus styles: Accessible and visible! */
+    :focus {
+        outline: 3px solid var(--primary) !important;
+        outline-offset: 2px !important;
+    }
+    :focus:not(:focus-visible) {
+        outline: none !important;
+    }
+
+    /* Remove tap highlight on mobile */
+    a, button, input, textarea {
+        -webkit-tap-highlight-color: transparent;
     }
 
     /* Header */
@@ -182,13 +110,7 @@
         position: sticky;
         top: 0;
         z-index: 100;
-        border-top: none !important;
-        border-left: none !important;
-        border-right: none !important;
-        outline: none !important;
-        box-shadow: none !important;
     }
-
     nav {
         max-width: 1200px;
         margin: 0 auto;
@@ -196,25 +118,17 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border: none !important;
-        outline: none !important;
-        box-shadow: none !important;
-        background: var(--white);
     }
-
     .logo {
         font-size: 24px;
         font-weight: 800;
         color: var(--primary);
         text-decoration: none;
     }
-
     .nav-links {
         display: flex;
-        list-style: none;
         gap: 32px;
     }
-
     .nav-links a {
         color: var(--text-black);
         text-decoration: none;
@@ -223,24 +137,21 @@
         border-radius: var(--radius);
         transition: all 0.2s;
     }
-
-    .nav-links a:hover {
+    .nav-links a:hover, .nav-links a:focus-visible {
         color: var(--primary);
         background: rgba(29, 78, 216, 0.1);
     }
 
-    /* Hero section */
+    /* Hero */
     .hero {
         padding: 80px 24px;
         text-align: center;
         background: var(--white);
     }
-
     .hero-container {
         max-width: 900px;
         margin: 0 auto;
     }
-
     .hero h1 {
         font-size: clamp(40px, 5vw, 56px);
         font-weight: 800;
@@ -249,7 +160,6 @@
         line-height: 1.1;
         letter-spacing: -0.02em;
     }
-
     .hero .subtitle {
         font-size: 20px;
         font-weight: 600;
@@ -274,9 +184,10 @@
         cursor: pointer;
         transition: all 0.2s;
         box-shadow: var(--shadow-sm);
+        min-width: 48px;
+        min-height: 48px;
     }
-
-    .cta-button:hover {
+    .cta-button:hover, .cta-button:focus-visible {
         background: var(--primary-dark);
         transform: translateY(-1px);
         box-shadow: var(--shadow-md);
@@ -287,12 +198,10 @@
         padding: 80px 24px;
         background: var(--white);
     }
-
     .features-container {
         max-width: 1200px;
         margin: 0 auto;
     }
-
     .section-title {
         font-size: 40px;
         font-weight: 800;
@@ -301,7 +210,6 @@
         margin-bottom: 16px;
         letter-spacing: -0.02em;
     }
-
     .section-subtitle {
         font-size: 20px;
         font-weight: 600;
@@ -312,14 +220,12 @@
         margin-left: auto;
         margin-right: auto;
     }
-
     .features-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
         gap: 24px;
         margin-top: 48px;
     }
-
     .feature-card {
         background: var(--gray-50);
         padding: 32px;
@@ -327,13 +233,11 @@
         border: 1px solid var(--gray-200);
         transition: all 0.3s;
     }
-
-    .feature-card:hover {
+    .feature-card:hover, .feature-card:focus-within {
         transform: translateY(-4px);
         box-shadow: var(--shadow-lg);
         border-color: var(--primary);
     }
-
     .feature-icon {
         width: 56px;
         height: 56px;
@@ -344,15 +248,14 @@
         justify-content: center;
         margin-bottom: 24px;
         font-size: 24px;
+        color: white;
     }
-
     .feature-title {
         font-size: 22px;
         font-weight: 700;
         color: var(--text-black);
         margin-bottom: 12px;
     }
-
     .feature-description {
         color: var(--text-dark);
         font-weight: 600;
@@ -365,40 +268,34 @@
         color: white;
         padding: 80px 24px;
     }
-
     .stats-container {
         max-width: 1200px;
         margin: 0 auto;
         text-align: center;
     }
-
     .stats .section-title {
         color: white;
     }
-
     .stats .section-subtitle {
-        color: rgba(255, 255, 255, 0.95);
+        color: rgba(255,255,255,0.95);
     }
-
     .stats-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
         gap: 24px;
         margin-top: 48px;
     }
-
     .stat {
         padding: 32px;
         border-radius: var(--radius-lg);
-        background: rgba(255, 255, 255, 0.1);
-        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: rgba(255,255,255,0.1);
+        border: 1px solid rgba(255,255,255,0.2);
+        transition: background 0.2s, transform 0.2s;
     }
-
-    .stat:hover {
-        background: rgba(255, 255, 255, 0.15);
+    .stat:hover, .stat:focus-within {
+        background: rgba(255,255,255,0.15);
         transform: translateY(-2px);
     }
-
     .stat-number {
         font-size: 44px;
         font-weight: 800;
@@ -406,7 +303,6 @@
         display: block;
         margin-bottom: 8px;
     }
-
     .stat-label {
         font-size: 18px;
         font-weight: 700;
@@ -418,31 +314,26 @@
         padding: 80px 24px;
         background: var(--gray-50);
     }
-
     .contact-container {
         max-width: 700px;
         margin: 0 auto;
         text-align: center;
     }
-
     .contact-form {
         display: grid;
         gap: 24px;
         margin-top: 48px;
         text-align: left;
     }
-
     .form-group {
         display: flex;
         flex-direction: column;
     }
-
     .form-label {
         font-weight: 700;
         color: var(--text-black);
         margin-bottom: 8px;
     }
-
     .form-input,
     .form-textarea {
         width: 100%;
@@ -456,41 +347,38 @@
         background: white;
         transition: border-color 0.2s;
     }
-
     .form-input:focus,
     .form-textarea:focus {
-        outline: none;
         border-color: var(--primary);
     }
-
     .form-textarea {
         resize: vertical;
         min-height: 120px;
     }
-
     .form-message {
         font-size: 14px;
         font-weight: 600;
         color: var(--text-medium);
         margin-top: 4px;
     }
-
     .form-group.error .form-input,
     .form-group.error .form-textarea {
         border-color: var(--error);
     }
-
     .form-group.error .form-message {
         color: var(--error);
     }
-
     .form-group.success .form-input,
     .form-group.success .form-textarea {
         border-color: var(--success);
     }
-
     .form-group.success .form-message {
         color: var(--success);
+    }
+    /* Error message to be announced */
+    .form-message[aria-live="polite"] {
+        min-height: 1.5em;
+        display: block;
     }
 
     /* Footer */
@@ -499,7 +387,6 @@
         color: white;
         padding: 48px 24px;
     }
-
     .footer-content {
         max-width: 1200px;
         margin: 0 auto;
@@ -508,35 +395,30 @@
         gap: 32px;
         margin-bottom: 32px;
     }
-
     .footer-section h3 {
         margin-bottom: 16px;
         color: var(--accent);
         font-size: 20px;
         font-weight: 700;
     }
-
     .footer-section p {
-        color: rgba(255, 255, 255, 0.95);
+        color: rgba(255,255,255,0.95);
         font-weight: 600;
         line-height: 1.6;
     }
-
     .footer-section a {
         color: var(--accent);
         text-decoration: underline;
         font-weight: 700;
     }
-
-    .footer-section a:hover {
+    .footer-section a:hover, .footer-section a:focus-visible {
         color: white;
     }
-
     .footer-bottom {
         text-align: center;
-        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-top: 1px solid rgba(255,255,255,0.3);
         padding-top: 24px;
-        color: rgba(255, 255, 255, 0.9);
+        color: rgba(255,255,255,0.9);
         font-weight: 600;
     }
 
@@ -560,66 +442,36 @@
             gap: 16px;
             padding: 16px;
         }
-
         .nav-links {
             gap: 16px;
             flex-wrap: wrap;
             justify-content: center;
         }
-
         .hero,
         .features,
         .stats,
         .contact {
             padding: 48px 16px;
         }
-
         .section-title {
             font-size: 32px;
         }
-
         .features-grid {
             grid-template-columns: 1fr;
         }
-
         .stats-grid {
             grid-template-columns: repeat(2, 1fr);
         }
     }
-
     @media (max-width: 480px) {
         .stats-grid {
             grid-template-columns: 1fr;
         }
-
         .footer-content {
             grid-template-columns: 1fr;
             text-align: center;
         }
     }
-
-    /* Custom focus styles - replace any browser defaults */
-    :focus {
-        outline: 3px solid var(--primary) !important;
-        outline-offset: 2px !important;
-    }
-
-    :focus:not(:focus-visible) {
-        outline: none !important;
-    }
-
-    /* Ensure no blue bars on any elements */
-    input:focus,
-    textarea:focus,
-    button:focus,
-    a:focus,
-    [tabindex]:focus {
-        outline: 3px solid var(--primary) !important;
-        outline-offset: 2px !important;
-        box-shadow: none !important;
-        border-color: var(--primary) !important;
-    }
-
     /* Reduced motion */
     @media (prefers-reduced-motion: reduce) {
         * {
@@ -629,225 +481,206 @@
             scroll-behavior: auto !important;
         }
     }
-</style>
-```
-
+    </style>
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
-```
-<header>
-    <nav role="navigation" aria-label="Main navigation">
-        <a href="#" class="logo">2 Find Marketing</a>
-        <ul class="nav-links">
-            <li><a href="#services">Services</a></li>
-            <li><a href="#approach">Our Approach</a></li>
-            <li><a href="#results">Results</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <nav role="navigation" aria-label="Main navigation">
+            <a href="#" class="logo">2 Find Marketing</a>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#approach">Our Approach</a></li>
+                <li><a href="#results">Results</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<main id="main-content">
-    <section class="hero">
-        <div class="hero-container">
-            <h1>Exceptional Digital Experiences That Actually Work</h1>
-            <p class="subtitle">We build measurable, meaningful marketing strategies through accessible design and tools for your business users and customers that delivers real and measurable results.</p>
-            <a href="#contact" class="cta-button">
-                <span>Start Your Project</span>
-                <span aria-hidden="true">→</span>
-            </a>
-        </div>
-    </section>
-
-    <section id="services" class="features">
-        <div class="features-container">
-            <h2 class="section-title">Services That Drive Results</h2>
-            <p class="section-subtitle">Like some have redefined kitchen tools through simple, functional design, we redefine digital marketing focused on tools and experiences that just work for everyone.</p>
-            
-            <div class="features-grid">
-                <article class="feature-card">
-                    <div class="feature-icon" aria-hidden="true">🎯</div>
-                    <h3 class="feature-title">Strategic Marketing</h3>
-                    <p class="feature-description">Data-driven strategies that align with your business goals. Every campaign is measured, meaningful, and designed for real return on investment.</p>
-                </article>
-                
-                <article class="feature-card">
-                    <div class="feature-icon" aria-hidden="true">♿</div>
-                    <h3 class="feature-title">Universal Accessibility</h3>
-                    <p class="feature-description">Designs that work for everyone, automatically. We build inclusive experiences that expand your reach and demonstrate excellence in user experience.</p>
-                </article>
-                
-                <article class="feature-card">
-                    <div class="feature-icon" aria-hidden="true">📊</div>
-                    <h3 class="feature-title">Measurable Outcomes</h3>
-                    <p class="feature-description">Clear metrics, transparent reporting, and continuous optimization. You will always know exactly how your investment is performing.</p>
-                </article>
-                
-                <article class="feature-card">
-                    <div class="feature-icon" aria-hidden="true">🚀</div>
-                    <h3 class="feature-title">Digital Innovation</h3>
-                    <p class="feature-description">Cutting-edge solutions that feel effortless to use. We leverage the latest technology to create experiences that delight users and drive results.</p>
-                </article>
-                
-                <article class="feature-card">
-                    <div class="feature-icon" aria-hidden="true">🤝</div>
-                    <h3 class="feature-title">Partnership Approach</h3>
-                    <p class="feature-description">We work as an extension of your team, bringing expertise in networking, outreach, and social media to amplify your message effectively.</p>
-                </article>
-                
-                <article class="feature-card">
-                    <div class="feature-icon" aria-hidden="true">✨</div>
-                    <h3 class="feature-title">Exceptional User Experience</h3>
-                    <p class="feature-description">Every interaction is crafted with intention. Clear communication, intuitive layouts, and experiences that users remember and return to.</p>
-                </article>
+    <main id="main-content" tabindex="-1">
+        <section class="hero">
+            <div class="hero-container">
+                <h1>Exceptional Digital Experiences That Actually Work</h1>
+                <p class="subtitle">We build measurable, meaningful marketing strategies through accessible design and tools for your business users and customers that deliver real and measurable results.</p>
+                <a href="#contact" class="cta-button">
+                    <span>Start Your Project</span>
+                    <span aria-hidden="true">→</span>
+                </a>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="results" class="stats">
-        <div class="stats-container">
-            <h2 class="section-title">Results That Speak</h2>
-            <p class="section-subtitle">Our commitment to accessible, user-focused design delivers measurable business impact for our clients.</p>
-            
-            <div class="stats-grid">
-                <div class="stat">
-                    <span class="stat-number">98%</span>
-                    <span class="stat-label">Accessibility Score Average</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">3.2×</span>
-                    <span class="stat-label">Average ROI Increase</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">47%</span>
-                    <span class="stat-label">Broader Audience Reach</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">100%</span>
-                    <span class="stat-label">Client Satisfaction Rate</span>
+        <section id="services" class="features">
+            <div class="features-container">
+                <h2 class="section-title">Services That Drive Results</h2>
+                <p class="section-subtitle">Like some have redefined kitchen tools through simple, functional design, we redefine digital marketing focused on tools and experiences that just work for everyone.</p>
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <div class="feature-icon" role="img" aria-label="Strategic Marketing">🎯</div>
+                        <h3 class="feature-title">Strategic Marketing</h3>
+                        <p class="feature-description">Data-driven strategies that align with your business goals. Every campaign is measured, meaningful, and designed for real return on investment.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon" role="img" aria-label="Universal Accessibility">♿</div>
+                        <h3 class="feature-title">Universal Accessibility</h3>
+                        <p class="feature-description">Designs that work for everyone, automatically. We build inclusive experiences that expand your reach and demonstrate excellence in user experience.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon" role="img" aria-label="Measurable Outcomes">📊</div>
+                        <h3 class="feature-title">Measurable Outcomes</h3>
+                        <p class="feature-description">Clear metrics, transparent reporting, and continuous optimization. You will always know exactly how your investment is performing.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon" role="img" aria-label="Digital Innovation">🚀</div>
+                        <h3 class="feature-title">Digital Innovation</h3>
+                        <p class="feature-description">Cutting-edge solutions that feel effortless to use. We leverage the latest technology to create experiences that delight users and drive results.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon" role="img" aria-label="Partnership Approach">🤝</div>
+                        <h3 class="feature-title">Partnership Approach</h3>
+                        <p class="feature-description">We work as an extension of your team, bringing expertise in networking, outreach, and social media to amplify your message effectively.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon" role="img" aria-label="Exceptional User Experience">✨</div>
+                        <h3 class="feature-title">Exceptional User Experience</h3>
+                        <p class="feature-description">Every interaction is crafted with intention. Clear communication, intuitive layouts, and experiences that users remember and return to.</p>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact" class="contact">
-        <div class="contact-container">
-            <h2 class="section-title">Ready to Build Something Exceptional?</h2>
-            <p class="section-subtitle">Let's create a digital experience that works beautifully for everyone and delivers real results for your business.</p>
-            
-            <form class="contact-form" action="#" method="POST">
-                <div class="form-group">
-                    <label for="name" class="form-label">Your Name (Required)</label>
-                    <input type="text" id="name" name="name" class="form-input" required>
-                    <div class="form-message">Please enter your full name</div>
+        <section id="results" class="stats">
+            <div class="stats-container">
+                <h2 class="section-title">Results That Speak</h2>
+                <p class="section-subtitle">Our commitment to accessible, user-focused design delivers measurable business impact for our clients.</p>
+                <div class="stats-grid">
+                    <div class="stat" tabindex="0">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Accessibility Score Average</span>
+                    </div>
+                    <div class="stat" tabindex="0">
+                        <span class="stat-number">3.2×</span>
+                        <span class="stat-label">Average ROI Increase</span>
+                    </div>
+                    <div class="stat" tabindex="0">
+                        <span class="stat-number">47%</span>
+                        <span class="stat-label">Broader Audience Reach</span>
+                    </div>
+                    <div class="stat" tabindex="0">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Client Satisfaction Rate</span>
+                    </div>
                 </div>
-                
-                <div class="form-group">
-                    <label for="email" class="form-label">Email Address (Required)</label>
-                    <input type="email" id="email" name="email" class="form-input" required>
-                    <div class="form-message">We'll use this to respond to your inquiry</div>
-                </div>
-                
-                <div class="form-group">
-                    <label for="company" class="form-label">Company Name</label>
-                    <input type="text" id="company" name="company" class="form-input">
-                    <div class="form-message">Optional: Help us understand your business context</div>
-                </div>
-                
-                <div class="form-group">
-                    <label for="message" class="form-label">Tell us about your project (Required)</label>
-                    <textarea id="message" name="message" class="form-textarea" required placeholder="What are your goals? What challenges are you facing? How can we help you succeed?"></textarea>
-                    <div class="form-message">Please describe your project goals and any specific requirements</div>
-                </div>
-                
-                <button type="submit" class="cta-button">
-                    <span>Send Message</span>
-                    <span aria-hidden="true">✓</span>
-                </button>
-            </form>
-        </div>
-    </section>
-</main>
+            </div>
+        </section>
 
-<footer>
-    <div class="footer-content">
-        <div class="footer-section">
-            <h3>2 Find Marketing</h3>
-            <p>Building exceptional digital experiences that work for everyone and deliver measurable results. Based in excellence, driven by accessibility.</p>
-        </div>
-        
-        <div class="footer-section">
-            <h3>Our Approach</h3>
-            <p>Accessible design, strategic thinking, and measurable outcomes. Every project is crafted with intention and optimized for real-world success across all user types.</p>
-        </div>
-        
-        <div class="footer-section">
-            <h3>Connect With Us</h3>
-            <p>Ready to discuss your project? <a href="#contact">Get in touch</a> and let's build something exceptional together. We're here to help you succeed.</p>
-        </div>
-    </div>
-    
-    <div class="footer-bottom">
-        <p>&copy; 2024 2 Find Marketing, LLC. All rights reserved. Designed with accessibility, neurodiversity, and excellence in mind.</p>
-    </div>
-</footer>
+        <section id="contact" class="contact">
+            <div class="contact-container">
+                <h2 class="section-title">Ready to Build Something Exceptional?</h2>
+                <p class="section-subtitle">Let's create a digital experience that works beautifully for everyone and delivers real results for your business.</p>
+                <form class="contact-form" action="#" method="POST" novalidate>
+                    <div class="form-group">
+                        <label for="name" class="form-label">Your Name (Required)</label>
+                        <input type="text" id="name" name="name" class="form-input" required aria-required="true" aria-invalid="false">
+                        <div class="form-message" aria-live="polite">Please enter your full name</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address (Required)</label>
+                        <input type="email" id="email" name="email" class="form-input" required aria-required="true" aria-invalid="false">
+                        <div class="form-message" aria-live="polite">We'll use this to respond to your inquiry</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="company" class="form-label">Company Name</label>
+                        <input type="text" id="company" name="company" class="form-input" aria-invalid="false">
+                        <div class="form-message" aria-live="polite">Optional: Help us understand your business context</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Tell us about your project (Required)</label>
+                        <textarea id="message" name="message" class="form-textarea" required aria-required="true" aria-invalid="false" placeholder="What are your goals? What challenges are you facing? How can we help you succeed?"></textarea>
+                        <div class="form-message" aria-live="polite">Please describe your project goals and any specific requirements</div>
+                    </div>
+                    <button type="submit" class="cta-button">
+                        <span>Send Message</span>
+                        <span aria-hidden="true">✓</span>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
 
-<script>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>2 Find Marketing</h3>
+                <p>Building exceptional digital experiences that work for everyone and deliver measurable results. Based in excellence, driven by accessibility.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Our Approach</h3>
+                <p>Accessible design, strategic thinking, and measurable outcomes. Every project is crafted with intention and optimized for real-world success across all user types.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <p>Ready to discuss your project? <a href="#contact">Get in touch</a> and let's build something exceptional together. We're here to help you succeed.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 2 Find Marketing, LLC. All rights reserved. Designed with accessibility, neurodiversity, and excellence in mind.</p>
+        </div>
+    </footer>
+
+    <script>
     // Smooth scrolling with focus management
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
-            e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
             if (target) {
+                e.preventDefault();
                 const scrollBehavior = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
                 target.scrollIntoView({
                     behavior: scrollBehavior,
                     block: 'start'
                 });
-                
                 setTimeout(() => {
                     target.focus();
-                    target.setAttribute('tabindex', '-1');
                 }, scrollBehavior === 'smooth' ? 300 : 0);
             }
         });
     });
 
-    // Form validation
+    // Form validation with aria-invalid
     document.querySelector('.contact-form').addEventListener('submit', function(e) {
         e.preventDefault();
-        
         const formGroups = this.querySelectorAll('.form-group');
         formGroups.forEach(group => {
             group.classList.remove('error', 'success');
+            const input = group.querySelector('.form-input, .form-textarea');
+            if (input) input.setAttribute('aria-invalid', 'false');
         });
-        
+
         let isValid = true;
         const requiredFields = this.querySelectorAll('[required]');
-        
         requiredFields.forEach(field => {
             const formGroup = field.closest('.form-group');
-            
             if (!field.value.trim()) {
                 isValid = false;
                 formGroup.classList.add('error');
+                field.setAttribute('aria-invalid', 'true');
             } else {
                 formGroup.classList.add('success');
+                field.setAttribute('aria-invalid', 'false');
             }
         });
-        
+
         if (isValid) {
             alert('Thank you for your message! We will get back to you within 24 hours.');
             this.reset();
             formGroups.forEach(group => {
                 group.classList.remove('error', 'success');
+                const input = group.querySelector('.form-input, .form-textarea');
+                if (input) input.setAttribute('aria-invalid', 'false');
             });
         }
     });
-</script>
-```
-
+    </script>
 </body>
 </html>
