@@ -1,5 +1,4 @@
-# 2FIND MARKETING NEW CONTENT
-## DO NOT DELETE - REFERENCE DOCUMENT
+# 2FIND MARKETING NEW CONTENT - REFERENCE DOCUMENT
 
 ## HERO SECTION
 ### Headline
@@ -69,4 +68,149 @@ Sound Familiar?
 
 ---
 
-## Continue with all sections...
+## PARTNERSHIP APPROACH SECTION
+### Section Title
+How We Move Forward Together
+
+### Phase 1: Weeks 1-2: Listen and Learn
+I interview your customers, team, and partners. Review your analytics (and make sure they're capturing what matters). Check how you appear in both Google and AI responses. You get fresh eyes on familiar challenges.
+
+### Phase 2: Weeks 3-4: Connect the Dots
+We synthesize what your team already knows with market patterns I've seen before. Together, we identify quick wins and longer-term opportunities. Everything tied to measurable business outcomes.
+
+### Phase 3: Week 5+: Build Momentum
+We work alongside your team to implement improvements at a sustainable pace. When specialized expertise would help - like rebuilding analytics or migrating systems - I bring in the right people from my network.
+
+### Phase 4: Ongoing: Transfer Knowledge
+Every improvement gets documented. Your team gets trained. You own the systems we build together. My success is measured by how well things run without me.
+
+---
+
+## SERVICES SECTION
+### Section Title
+Engagement Options That Match Your Reality
+
+### Service 1: Discovery & Roadmap
+#### Timeline: 4-6 weeks
+#### Investment: From $15,000
+#### Description: Perfect when you sense opportunities but need outside perspective to prioritize them. I'll interview stakeholders, audit your tech stack, check your AI discovery presence, and create a practical roadmap that builds on what's already working.
+#### Deliverables: Fresh perspective on familiar challenges | Technical audit that speaks business language | 90-day implementation roadmap with quick wins | Clarity on what ChatGPT says about your industry
+#### Best For: "We know something's not quite right but can't put our finger on it."
+
+### Service 2: Implementation Partnership
+#### Timeline: Monthly ongoing
+#### Investment: $5,000-$15,000/month
+#### Description: Think of me as an experienced addition to your team. We work through your roadmap together, bring in specialists when needed, and build capabilities that last.
+#### Deliverables: Weekly working sessions to maintain momentum | Hands-on help with implementation | Access to my network of specialists | Documentation so nothing lives in one person's head
+#### Best For: "We know what needs doing but need experienced guidance to do it right."
+
+### Service 3: Focused Projects
+#### Description: Specific expertise for defined challenges. I've done these exact projects before and know what works.
+
+#### Project A: The Consolidation Project
+##### Challenge: 12 websites → 1 platform
+##### Client Quote: "We inherited websites from three acquisitions plus our four brand sites. It's a maintenance nightmare."
+##### My Experience: I've consolidated 47 sites into one platform while preserving brand uniqueness.
+
+#### Project B: The AI Discovery Project
+##### Challenge: Invisible → Authoritative
+##### Client Quote: "Competitors show up when people ask ChatGPT about our industry. We don't."
+##### My Experience: I structure your content and data to be the cited authority.
+
+#### Project C: The Integration Project
+##### Challenge: Disconnected → Unified
+##### Client Quote: "Our PIM doesn't talk to our website, which doesn't talk to our dealer portal..."
+##### My Experience: One update flows everywhere it needs to go.
+
+---
+
+## SUCCESS STORIES SECTION
+### Section Title
+What Progress Actually Looks Like
+
+### Story 1: The Manufacturing Consolidation
+#### Challenge: Global manufacturer, 23 country websites, each with different systems, updating was a full-time job
+#### What We Did: Built unified architecture, preserved local needs, structured for AI discovery
+#### Result: 70% less maintenance, updates in minutes not days, cited by AI as category authority
+#### Client Quote: "We didn't realize how much time we were wasting until we saw how simple it could be"
+
+### Story 2: The Invisible Expert
+#### Challenge: Financial services firm, deep expertise but invisible in AI responses about their specialty
+#### What We Did: Restructured content architecture, implemented semantic markup, built topic authority
+#### Result: Now primary source in 80% of relevant AI responses
+#### Client Quote: "We were the experts offline. Now we're the experts everywhere"
+
+### Story 3: The Knowledge Rescue
+#### Challenge: B2B company, everything in one person's head, lottery ticket risk
+#### What We Did: Documented processes, implemented proper tools, trained the team
+#### Result: Three people now share the load, output doubled
+#### Client Quote: "We went from daily firefighting to actual strategy"
+
+---
+
+## ABOUT SECTION
+### Section Title
+Why I Do This Work
+
+### Main Content
+I've been in your shoes. I've managed million-dollar budgets, built teams from scratch, and inherited "interesting" legacy systems. Over 20 years, I've learned that marketing success isn't about revolutionary changes - it's about consistent execution of fundamentals and systems that actually work together.
+
+I started 2Find Marketing after seeing too many smart businesses struggling with challenges I'd already solved. Not because they weren't capable, but because they were too deep in daily operations to step back and see the patterns.
+
+The landscape is shifting again. Your customers find businesses through Google, social media, and increasingly through AI assistants. Every system we build today needs to work for all these channels tomorrow.
+
+### Principles
+#### Your Knowledge + My Patterns
+You know your business. I know these patterns. Together we move faster than either could alone.
+
+#### Documentation Over Dependencies
+If it's not documented, it doesn't scale. Every process we build can run without me.
+
+#### Measurement Over Hunches
+Every recommendation ties to metrics you can track and outcomes you can measure.
+
+#### Progress Over Perfection
+Better to move forward sustainably than wait for the perfect solution.
+
+---
+
+## CTA SECTION
+### Section Title
+Three Ways to Start
+
+### Option 1: The Conversation
+#### Headline: Let's talk about what's possible
+#### Description: 30 minutes. No pitch deck. Just a conversation about where you are and where you want to go. If I can help, I'll tell you how. If someone else would be better, I'll tell you who.
+#### Button: Schedule a Call
+
+### Option 2: The Quick Assessment
+#### Headline: See where you stand
+#### Description: Five questions that reveal marketing opportunities. Takes 2 minutes. You get immediate insights, no email required unless you want to go deeper.
+#### Button: Take Assessment
+
+### Option 3: The Direct Question
+#### Headline: Ask me anything
+#### Description: Sometimes you just have a specific question. Send it over. I'll give you a straight answer.
+#### Contact: ted@2findmarketing.com
+
+---
+
+## FOOTER SECTION
+### Experience Brief
+- 20+ years in digital marketing and operations
+- Consolidated 47 websites into unified platforms
+- Migrated dozen of enterprise systems
+- Built teams from 1 to 50 people
+- Managed budgets from $10K to $10M
+
+### Pattern Recognition
+- Worked with startups to Fortune 500
+- B2B and B2C experience
+- Manufacturing, financial services, nonprofits, SaaS
+- Based in Morton Grove, IL (but patterns are universal)
+
+### Network Effect
+I maintain relationships with specialists in analytics, development, content, and design. When you need specific expertise, I know who to call.
+
+### Accessibility Statement
+This site exceeds WCAG 2.1 AA standards because good marketing works for everyone. Encounter a barrier? Let me know: accessibility@2findmarketing.com
