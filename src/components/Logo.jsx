@@ -10,10 +10,10 @@ const Logo = (props) => (
       {...props}
       style={{ display: "block" }}
     >
-      {/* Circles: overlap increased by 10px */}
-      <circle cx="96" cy="85" r="50" stroke="#1E3A8A" strokeWidth="6" fill="none"/>
-      <circle cx="164" cy="85" r="50" stroke="#10B981" strokeWidth="6" fill="none"/>
-      {/* Text below with margin */}
+      {/* Circles: 5% thicker stroke */}
+      <circle cx="96" cy="85" r="50" stroke="#1E3A8A" strokeWidth="6.3" fill="none"/>
+      <circle cx="164" cy="85" r="50" stroke="#10B981" strokeWidth="6.3" fill="none"/>
+      {/* Text below with closer spacing */}
       <text
         x="40"
         y="175"
@@ -24,7 +24,7 @@ const Logo = (props) => (
         letterSpacing="2"
       >2</text>
       <text
-        x="90"
+        x="75"
         y="175"
         fontFamily="Inter, Arial, sans-serif"
         fontSize="48"

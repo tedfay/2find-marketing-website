@@ -1,58 +1,17 @@
-import React from 'react';
+import React from "react";
+import "../styles/Section.css";
 
-const About = () => {
-  return (
-    <section className="about" aria-labelledby="about-heading">
-      <div className="container">
-        <h2 id="about-heading">Why I Do This Work</h2>
-        
-        <div className="about-content">
-          <p>
-            I've been in your shoes. I've managed million-dollar budgets, built teams from scratch, 
-            and inherited "interesting" legacy systems. Over 20 years, I've learned that marketing 
-            success isn't about revolutionary changes - it's about consistent execution of fundamentals 
-            and systems that actually work together.
-          </p>
-          
-          <p>
-            I started 2Find Marketing after seeing too many smart businesses struggling with challenges 
-            I'd already solved. Not because they weren't capable, but because they were too deep in 
-            daily operations to step back and see the patterns.
-          </p>
-          
-          <p>
-            The landscape is shifting again. Your customers find businesses through Google, social media, 
-            and increasingly through AI assistants. Every system we build today needs to work for all 
-            these channels tomorrow.
-          </p>
-          
-          <div className="principles">
-            <h3>What Drives My Approach</h3>
-            
-            <div className="principle">
-              <h4>Your Knowledge + My Patterns</h4>
-              <p>You know your business. I know these patterns. Together we move faster than either could alone.</p>
-            </div>
-            
-            <div className="principle">
-              <h4>Documentation Over Dependencies</h4>
-              <p>If it's not documented, it doesn't scale. Every process we build can run without me.</p>
-            </div>
-            
-            <div className="principle">
-              <h4>Measurement Over Hunches</h4>
-              <p>Every recommendation ties to metrics you can track and outcomes you can measure.</p>
-            </div>
-            
-            <div className="principle">
-              <h4>Progress Over Perfection</h4>
-              <p>Better to move forward sustainably than wait for the perfect solution.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
+const About = () => (
+  <section className="section" id="about">
+    <div className="section__container">
+      <h2 className="section__title">Why I Do This Work</h2>
+        <p className="about__text">
+          I’ve always loved learning—and just as much, I love sharing what I learn. Marketing is a field that never stops evolving, and I’m energized by the challenge to keep growing with it. But what really drives me is helping others expand their own understanding, whether they want to dig into strategy with me or simply need a trusted hand to focus on growth while they focus elsewhere.
+        <br /><br />
+          That’s why my approach goes beyond traditional consulting. I’m here to be a partner—offering retained support and fractional executive services—so that together, we can adapt, innovate, and succeed in a fast-moving world.
+      </p>
+    </div>
+  </section>
+);
 
 export default About;
