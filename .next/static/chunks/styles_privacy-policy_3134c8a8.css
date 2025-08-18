@@ -1,0 +1,35 @@
+/* [project]/styles/privacy-policy.css [app-client] (css) */
+.privacy-policy-main {
+  color: #222;
+  background: #f9fafb;
+  max-width: 720px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.privacy-policy-main h1, .privacy-policy-main h2 {
+  color: #1d4ed8;
+}
+
+.privacy-policy-main h1 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.privacy-policy-main h2 {
+  margin-top: 2rem;
+  margin-bottom: .8rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.privacy-policy-main ul {
+  margin-left: 1.25rem;
+}
+
+.privacy-policy-main a {
+  color: #1d4ed8;
+}
+
+/*# sourceMappingURL=styles_privacy-policy_3134c8a8.css.map*/

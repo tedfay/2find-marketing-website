@@ -1,0 +1,89 @@
+/* [project]/styles/Hero.css [app-client] (css) */
+.hero {
+  background: linear-gradient(90deg, #f7fafc 60%, #e9f4fe 100%);
+  padding: 80px 0 60px;
+}
+
+.hero-flex {
+  justify-content: space-between;
+  align-items: center;
+  gap: 56px;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.hero-content {
+  flex: 58%;
+}
+
+.hero-content h1 {
+  color: #1a2635;
+  margin-bottom: 20px;
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+
+.subtitle {
+  color: #0077b5;
+  margin-bottom: 18px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.hero-description {
+  color: #32353a;
+  margin-bottom: 28px;
+  font-size: 1.07rem;
+  line-height: 1.6;
+}
+
+.cta-button.primary {
+  color: #fff;
+  background: #0077b5;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 32px;
+  font-size: 1.07rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background .2s;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, .07);
+}
+
+.cta-button.primary:hover {
+  background: #005983;
+}
+
+.hero-image {
+  flex: 42%;
+  justify-content: center;
+  align-items: center;
+  min-width: 240px;
+  min-height: 200px;
+  display: flex;
+}
+
+.hero-image img {
+  background: none;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  box-shadow: 0 4px 28px rgba(0, 0, 0, .08);
+}
+
+@media (max-width: 900px) {
+  .hero-flex {
+    text-align: center;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .hero-image {
+    min-width: 140px;
+    min-height: 110px;
+  }
+}
+
+/*# sourceMappingURL=styles_Hero_css_e59ae46c._.single.css.map*/

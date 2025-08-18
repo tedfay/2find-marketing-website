@@ -24,7 +24,7 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section className="section">
+    <section className="section" id="services">
       <div className="section-container">
         <h2 className="section-title">Services</h2>
         <div className="cards">

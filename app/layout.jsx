@@ -1,7 +1,7 @@
 import { Outfit, Roboto } from "next/font/google";
 import "./globals.css";
-import Header from "./header";
-import Footer from "./footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const outfit = Outfit({
   variable: "--font-outfit",
