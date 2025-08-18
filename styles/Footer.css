@@ -1,0 +1,66 @@
+.site-footer-simple {
+  background: #f4f4f4 !important;  /* Use your brand grey if different */
+  color: #111;
+  border-top: 1px solid #eee;
+  padding: 16px 0;
+  font-size: 14px;
+  border-radius: 0 !important;
+}
+
+.footer-simple-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 0 24px;
+}
+
+.footer-simple-left {
+  display: flex;
+  align-items: center;
+  gap: 0; /* We'll use margin on .dot for spacing */
+  color: #111;
+  flex-wrap: wrap;
+}
+
+.footer-link,
+.dot {
+  color: #111 !important;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14
+  px;
+}
+
+.footer-link:hover {
+  color: #0077B5;
+  text-decoration: underline;
+}
+
+.dot {
+  margin: 0 10px; /* Space between sections and dot */
+  font-size: 18px;
+  user-select: none;
+}
+
+.footer-simple-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-linkedin svg {
+  vertical-align: middle;
+  display: inline-block;
+  transition: fill 0.15s;
+}
+
+.footer-linkedin svg path:first-child {
+  fill: #0077B5;
+}
+
+.footer-linkedin:hover svg path:first-child {
+  fill: #005983;
+}

@@ -1,0 +1,22 @@
+.thank-you-main {
+  padding: 2rem;
+  max-width: 720px;
+  margin: auto;
+  color: #222;
+  background: #f9fafb;
+  text-align: center;
+}
+.thank-you-main h1 {
+  color: #1d4ed8;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+.thank-you-main p {
+  margin-bottom: 1.2rem;
+  font-size: 1.1rem;
+}
+.thank-you-main a {
+  color: #1d4ed8;
+  text-decoration: underline;
+}

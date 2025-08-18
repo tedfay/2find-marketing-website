@@ -1,0 +1,128 @@
+.cta-section {
+  background: #f8fafc;
+  padding: 56px 0 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.cta-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.10);
+  border: 1.5px solid #e5e7eb;
+  max-width: 950px;
+  width: 100%;
+  padding: 48px 36px 40px 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cta-card h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 28px;
+  color: #1a2635;
+  letter-spacing: -1px;
+}
+
+.cta-options {
+  width: 100%;
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cta-option {
+  background: #f6f9fb;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  padding: 28px 22px 24px 22px;
+  flex: 1 1 260px;
+  min-width: 260px;
+  max-width: 290px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1.2px solid #e3eaf0;
+  margin-bottom: 10px;
+}
+
+.cta-option h3 {
+  color: #013f6e;
+  font-size: 1.3rem;
+  margin-bottom: 7px;
+  font-weight: 600;
+}
+
+.cta-tagline {
+  color: #0077b5;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.cta-option p {
+  font-size: 1rem;
+  color: #2d2f32;
+  margin-bottom: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.cta-button {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 7px;
+  padding: 11px 26px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s, color 0.2s;
+  border: none;
+}
+
+.cta-button.primary {
+  background: #0077b5;
+  color: #fff;
+}
+
+.cta-button.primary:hover {
+  background: #005983;
+}
+
+.cta-button.secondary {
+  background: #fff;
+  color: #0077b5;
+  border: 2px solid #0077b5;
+}
+
+.cta-button.secondary:hover {
+  background: #eaf6fd;
+}
+
+.cta-button.tertiary {
+  background: #f6f9fb;
+  color: #0077b5;
+  border: 2px solid #c4d2dd;
+}
+
+.cta-button.tertiary:hover {
+  background: #eaf6fd;
+}
+
+@media (max-width: 900px) {
+  .cta-options {
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+  }
+  .cta-option {
+    max-width: 100%;
+    width: 95%;
+  }
+  .cta-card {
+    padding: 32px 8px 32px 8px;
+  }
+}
