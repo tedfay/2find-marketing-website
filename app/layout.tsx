@@ -38,8 +38,9 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="canonical" href="https://www.2findmarketing.com/" />
-        
-        {/* Google Tag Manager */}
+      </head>
+      <body>
+        {/* Google Tag Manager Script */}
         <Script id="gtm-script" strategy="afterInteractive">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -49,8 +50,7 @@ export default function RootLayout({
             })(window,document,'script','dataLayer','GTM-P8JNTDN');
           `}
         </Script>
-      </head>
-      <body>
+
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
