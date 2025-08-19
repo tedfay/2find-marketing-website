@@ -2,7 +2,7 @@ const CTA = () => {
   // Helper to create mailto links with button text as subject
   const makeMailto = (subject: string) =>
     `mailto:ted.fay@2findmarketing.com?subject=${encodeURIComponent(subject)}`;
-
+  
   return (
     <section className="py-20 bg-blue-600 text-white" id="contact">
       <div className="container mx-auto px-4 text-center">
@@ -14,7 +14,8 @@ const CTA = () => {
         </p>
         <a 
           href={makeMailto("Let's discuss my marketing needs")}
-          className="btn-primary inline-block"
+          className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
+          style={{ backgroundColor: '#F59E0B' }}
         >
           Get Started Today
         </a>
@@ -24,4 +25,3 @@ const CTA = () => {
 };
 
 export default CTA;
-
