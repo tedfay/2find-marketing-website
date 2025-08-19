@@ -7,6 +7,7 @@ import Services from "../components/Services";
 // import HowWeHelp from "../components/HowWeHelp";
 // import Stories from "../components/Stories";
 import CTA from "../components/CTA";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         {/* <Stories /> */}
         <CTA />
       </main>
+      <Footer />
     </>
   );
 }
