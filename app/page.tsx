@@ -1,15 +1,23 @@
 import Hero from "../components/Hero";
 import About from "../components/About";
+// import Recognition from "../components/Recognition";
+// import ValueProps from "../components/ValueProps";
 import Services from "../components/Services";
+// import HowWeHelp from "../components/HowWeHelp";
+// import Stories from "../components/Stories";
 import CTA from "../components/CTA";
 
 export default function Home() {
-  return (
-    <main className="pt-20"> {/* Add padding for fixed header */}
-      <Hero />
-      <About />
-      <Services />
-      <CTA />
-    </main>
-  );
+ return (
+   <main className="pt-20">
+     <Hero />
+     <About />
+     {/* <Recognition /> */}
+     {/* <ValueProps /> */}
+     <Services />
+     {/* <HowWeHelp /> */}
+     {/* <Stories /> */}
+     <CTA />
+   </main>
+ );
 }

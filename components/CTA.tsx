@@ -4,7 +4,7 @@ const CTA = () => {
     `mailto:ted.fay@2findmarketing.com?subject=${encodeURIComponent(subject)}`;
 
   return (
-    <section className="py-20 bg-blue-600 text-white">
+    <section className="py-20 bg-blue-600 text-white" id="contact">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">
           Ready to Transform Your Business?
