@@ -98,7 +98,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "/Users/tedfay/2findmarketing-site",
+    "outputFileTracingRoot": "/Volumes/My Passport for Mac/2findmarketing-site",
     "experimental": {
       "useSkewCookie": false,
       "nodeMiddleware": false,
@@ -289,10 +289,10 @@
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.ts",
     "turbopack": {
-      "root": "/Users/tedfay/2findmarketing-site"
+      "root": "/Volumes/My Passport for Mac/2findmarketing-site"
     }
   },
-  "appDir": "/Users/tedfay/2findmarketing-site",
+  "appDir": "/Volumes/My Passport for Mac/2findmarketing-site",
   "relativeAppDir": "",
   "files": [
     ".next/routes-manifest.json",

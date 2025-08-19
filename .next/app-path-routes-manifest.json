@@ -1,7 +1,7 @@
 {
   "/_not-found/page": "/_not-found",
   "/favicon.ico/route": "/favicon.ico",
-  "/page": "/",
   "/thank-you/page": "/thank-you",
-  "/privacy-policy/page": "/privacy-policy"
+  "/privacy-policy/page": "/privacy-policy",
+  "/page": "/"
 }

@@ -1,4 +1,4 @@
-// File: /Users/tedfay/2findmarketing-site/app/thank-you/page.jsx
+// File: /Volumes/My Passport for Mac/2findmarketing-site/app/thank-you/page.jsx
 import * as entry from '../../../../app/thank-you/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
