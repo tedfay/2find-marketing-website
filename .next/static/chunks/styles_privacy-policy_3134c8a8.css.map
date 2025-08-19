@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///Users/tedfay/2findmarketing-site/2find-marketing-website-react/2find-next/styles/privacy-policy.css"],"sourcesContent":[".privacy-policy-main {\n  padding: 2rem;\n  max-width: 720px;\n  margin: auto;\n  color: #222;\n  background: #f9fafb;\n}\n.privacy-policy-main h1,\n.privacy-policy-main h2 {\n  color: #1d4ed8;\n}\n.privacy-policy-main h1 {\n  font-size: 2.5rem;\n  margin-bottom: 1rem;\n  font-weight: 800;\n}\n.privacy-policy-main h2 {\n  font-size: 1.4rem;\n  margin-top: 2rem;\n  margin-bottom: 0.8rem;\n  font-weight: 700;\n}\n.privacy-policy-main ul {\n  margin-left: 1.25rem;\n}\n.privacy-policy-main a {\n  color: #1d4ed8;\n}"],"names":[],"mappings":"AAAA;;;;;;;;AAOA;;;;AAIA;;;;;;AAKA;;;;;;;AAMA;;;;AAGA","debugId":null}}]
-}
