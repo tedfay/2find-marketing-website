@@ -20,6 +20,12 @@ export const metadata: Metadata = {
     title: '2Find Marketing - Strategic Marketing Consulting & Fractional CMO Services',
     description: 'Expert marketing consulting, retained services, and fractional executive leadership for small to mid-size businesses.',
   },
+  other: {
+    'geo.region': 'US-IL',
+    'geo.placename': 'Chicago, Evanston',
+    'geo.position': '42.0451;-87.6877',
+    'ICBM': '42.0451, -87.6877',
+  }
 }
 
 export default function RootLayout({
@@ -31,11 +37,8 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="canonical" href="https://www.2findmarketing.com/" />
-        <meta name="geo.region" content="US-IL" />
-        <meta name="geo.placename" content="Chicago, Evanston" />
-        <meta name="geo.position" content="42.0451;-87.6877" />
-        <meta name="ICBM" content="42.0451, -87.6877" />
-        
+      </head>
+      <body>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -304,8 +307,8 @@ export default function RootLayout({
             })
           }}
         />
-      </head>
-      <body>{children}</body>
+        {children}
+      </body>
     </html>
   )
 }
