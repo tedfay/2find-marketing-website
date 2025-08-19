@@ -3,11 +3,18 @@ import Script from 'next/script'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: '2Find Marketing - Strategic Marketing Consulting & Fractional CMO Services | Chicago',
+  title: '2 Find Marketing - Strategic Marketing Consulting & Fractional CMO Services | Chicago',
   description: 'Expert marketing consulting, retained services, and fractional executive leadership for small to mid-size businesses. 30+ years experience. Serving Chicago and nationwide.',
   keywords: 'marketing consultant, fractional CMO, marketing strategy, business growth, Chicago marketing consultant, retained marketing services, marketing executive',
   robots: 'index, follow',
   authors: [{ name: 'Ted Fay, 2Find Marketing' }],
+  manifest: "/site.webmanifest",
+  appleWebApp: {
+    title: "2 Find Marketing",
+    capable: true,
+    statusBarStyle: "default",
+  },
+  applicationName: "2 Find Marketing",
   openGraph: {
     type: 'website',
     url: 'https://www.2findmarketing.com/',
