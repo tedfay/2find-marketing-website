@@ -1,0 +1,133 @@
+/* [project]/styles/CTA.css [app-client] (css) */
+.cta-section {
+  background: #f8fafc;
+  justify-content: center;
+  padding: 56px 0 40px;
+  display: flex;
+}
+
+.cta-card {
+  background: #fff;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 18px;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 950px;
+  padding: 48px 36px 40px;
+  display: flex;
+  box-shadow: 0 6px 32px rgba(0, 0, 0, .1);
+}
+
+.cta-card h2 {
+  color: #1a2635;
+  letter-spacing: -1px;
+  margin-bottom: 28px;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.cta-options {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  width: 100%;
+  display: flex;
+}
+
+.cta-option {
+  background: #f6f9fb;
+  border: 1.2px solid #e3eaf0;
+  border-radius: 12px;
+  flex-direction: column;
+  flex: 260px;
+  align-items: center;
+  min-width: 260px;
+  max-width: 290px;
+  margin-bottom: 10px;
+  padding: 28px 22px 24px;
+  display: flex;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, .07);
+}
+
+.cta-option h3 {
+  color: #013f6e;
+  margin-bottom: 7px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.cta-tagline {
+  color: #0077b5;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.cta-option p {
+  color: #2d2f32;
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.cta-button {
+  cursor: pointer;
+  border: none;
+  border-radius: 7px;
+  margin-top: 8px;
+  padding: 11px 26px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background .2s, color .2s;
+  display: inline-block;
+}
+
+.cta-button.primary {
+  color: #fff;
+  background: #0077b5;
+}
+
+.cta-button.primary:hover {
+  background: #005983;
+}
+
+.cta-button.secondary {
+  color: #0077b5;
+  background: #fff;
+  border: 2px solid #0077b5;
+}
+
+.cta-button.secondary:hover {
+  background: #eaf6fd;
+}
+
+.cta-button.tertiary {
+  color: #0077b5;
+  background: #f6f9fb;
+  border: 2px solid #c4d2dd;
+}
+
+.cta-button.tertiary:hover {
+  background: #eaf6fd;
+}
+
+@media (max-width: 900px) {
+  .cta-options {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .cta-option {
+    width: 95%;
+    max-width: 100%;
+  }
+
+  .cta-card {
+    padding: 32px 8px;
+  }
+}
+
+/*# sourceMappingURL=styles_CTA_css_e59ae46c._.single.css.map*/
