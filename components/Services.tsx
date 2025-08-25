@@ -9,6 +9,13 @@ const ServiceCard = ({
   features, 
   isAIDiscovery = false,
   onServiceClick 
+}: {
+  title: string;
+  duration: string;
+  description: string;
+  features: string[];
+  isAIDiscovery?: boolean;
+  onServiceClick?: (title: string) => void;
 }) => {
   const handleLearnMoreClick = () => {
     // GA4 Event Tracking
