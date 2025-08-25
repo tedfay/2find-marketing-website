@@ -12,8 +12,8 @@ const ServiceCard = ({
 }) => {
   const handleLearnMoreClick = () => {
     // GA4 Event Tracking
-    if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('event', 'service_interest', {
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'service_interest', {
         event_category: 'lead_generation',
         event_label: title.toLowerCase().replace(/\s+/g, '_'),
         page_title: document.title,

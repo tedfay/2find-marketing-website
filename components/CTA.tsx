@@ -6,7 +6,7 @@ const CTA = () => {
   const handleAIDiscoveryClick = () => {
     // GA4 Event Tracking
     if (typeof window !== 'undefined' && (window as any).gtag) {
-      window.gtag('event', 'ai_audit_click', {
+      (window as any).gtag('event', 'ai_audit_click', {
         event_category: 'lead_generation',
         event_label: 'cta_section',
         page_title: document.title,
@@ -21,8 +21,8 @@ const CTA = () => {
 
   const handleSecondaryClick = () => {
     // GA4 Event Tracking for secondary action
-    if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('event', 'contact_click', {
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'contact_click', {
         event_category: 'lead_generation', 
         event_label: 'cta_section_secondary',
         page_title: document.title,
