@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Script from 'next/script'
+import Header from '../components/Header'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -22,11 +23,6 @@ export const metadata: Metadata = {
     description: 'Expert marketing consulting, retained services, and fractional executive leadership for small to mid-size businesses.',
     siteName: '2Find Marketing',
     locale: 'en_US',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: '2Find Marketing - Strategic Marketing Consulting & Fractional CMO Services',
-    description: 'Expert marketing consulting, retained services, and fractional executive leadership for small to mid-size businesses.',
   },
   other: {
     'geo.region': 'US-IL',
@@ -336,6 +332,8 @@ export default function RootLayout({
             })
           }}
         />
+        
+        <Header />
         {children}
       </body>
     </html>
