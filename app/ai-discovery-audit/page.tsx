@@ -346,7 +346,7 @@ export default function AIDiscoveryAudit() {
                   <textarea 
                     id="challenge" 
                     name="challenge" 
-                    rows="3"
+                    rows={3}
                     placeholder="e.g., Great content that customers never find, rich product data hidden from users..."
                     className="w-full p-4 border-2 border-gray-200 rounded-lg text-base transition-colors focus:border-emerald-500 focus:outline-none resize-vertical"
                   ></textarea>
