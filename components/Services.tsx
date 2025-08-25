@@ -70,7 +70,7 @@ const ServiceCard = ({
 };
 
 const Services = () => {
-  const handleServiceInteraction = (serviceName) => {
+  const handleServiceInteraction = (serviceName: string) => {
     console.log(`Service interaction: ${serviceName}`);
   };
 
