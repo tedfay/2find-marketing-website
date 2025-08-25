@@ -5,7 +5,7 @@ import React from 'react';
 const CTA = () => {
   const handleAIDiscoveryClick = () => {
     // GA4 Event Tracking
-    if (typeof window !== 'undefined' && window.gtag) {
+    if (typeof window !== 'undefined' && (window as any).gtag) {
       window.gtag('event', 'ai_audit_click', {
         event_category: 'lead_generation',
         event_label: 'cta_section',
